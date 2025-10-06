@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrinda Singhal - Business Analytics & Digital Business</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom font (Inter) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#4f46e5', // Indigo-600
+                        'secondary': '#10b981', // Emerald-500
+                        'background': '#f9fafb', // Gray-50
+                        'text-dark': '#1f2937', // Gray-800
+                        'text-light': '#374151', // Gray-600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for resume structure */
+        body {
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .resume-container {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-heading {
+            border-bottom: 2px solid #e5e7eb;
+        }
+        /* Custom image placeholder styling */
+        .photo-placeholder {
+            width: 128px;
+            height: 128px;
+            background-color: #d1d5db; /* Gray-300 */
+            color: #4b5563; /* Gray-600 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-text-dark">
+
+    <div class="max-w-4xl mx-auto my-8 md:my-12 p-4 md:p-8 bg-white rounded-xl resume-container">
+
+        <!-- HEADER SECTION (using <header> and <nav> for semantics) -->
+        <header class="pb-6 border-b-4 border-primary/50 mb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                
+                <!-- Profile Photo (Placeholder) -->
+                <div class="mb-4 md:mb-0">
+                    <!-- Replace 'https://placehold.co/128x128/4f46e5/ffffff?text=VS' with your actual image URL and remove the onerror line -->
+                    <img src="https://placehold.co/128x128/4f46e5/ffffff?text=VS" alt="Vrinda Singhal Profile Photo" 
+                         class="rounded-full photo-placeholder ring-4 ring-primary object-cover" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/128x128/d1d5db/4b5563?text=Add+Photo';" />
+                </div>
+
+                <!-- Name and Tagline -->
+                <div class="text-center md:text-left md:flex-grow">
+                    <h1 class="text-4xl font-bold text-primary">VRINDA SINGHAL</h1>
+                    <p class="text-xl text-text-light mt-1">BBA (Hons.) Business Analytics | Digital Business & Entrepreneurship</p>
+                </div>
+            </div>
+
+            <!-- Contact and Navigation (Using <nav> and <a> for links) -->
+            <nav class="mt-4 flex flex-wrap justify-center md:justify-end gap-3 text-sm font-medium">
+                <p class="text-text-light">(+91) 9307082015</p>
+                <a href="mailto:24jgbs-vsinghal@jgu.edu.in" class="hover:text-primary transition duration-300">24jgbs-vsinghal@jgu.edu.in</a>
+                <a href="http://www.linkedin.com/in/vrinda-singhal07" target="_blank" class="text-primary hover:underline transition duration-300">LinkedIn Profile &rarr;</a>
+            </nav>
+        </header>
+
+        <!-- CAREER OBJECTIVE SECTION (using <section> for semantics) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-3 section-heading pb-2 text-primary">Objective & Summary</h2>
+            <p class="text-text-light leading-relaxed">
+                Highly competent and meticulously organized, with strong proficiency in Excel and CRM software to optimize workflows and data management. 
+                With a proven ability in customer relations, human management, and exceptional communication, I'm ready to contribute this expertise to a demanding and 
+                collaborative position that requires keen problem-solving, effective interpersonal skills, and a commitment to achieving organizational goals through a 
+                positive and productive work environment.
+            </p>
+        </section>
+
+        <!-- EDUCATION SECTION (using <section> and <article> for semantics) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 section-heading pb-2 text-primary">Education History</h2>
+            
+            <!-- Education 1 -->
+            <article class="mb-5 p-4 rounded-lg bg-background border border-gray-200">
+                <h3 class="text-xl font-semibold text-text-dark">O.P Jindal Global University</h3>
+                <p class="text-secondary font-medium mt-1">Pursuing Bachelor of Business Administration in Business Analytics</p>
+                <p class="text-sm text-text-light italic">August 2024 - July 2028 | CGPA: 7.79/8.00</p>
+            </article>
+
+            <!-- Education 2 -->
+            <article class="mb-5 p-4 rounded-lg bg-background border border-gray-200">
+                <h3 class="text-xl font-semibold text-text-dark">Indian Institute of Management Bangalore</h3>
+                <p class="text-secondary font-medium mt-1">Pursuing Bachelor of Business Administration in Digital Business & Entrepreneurship</p>
+                <p class="text-sm text-text-light italic">August 2024 - July 2027</p>
+            </article>
+            
+            <!-- Schooling -->
+            <h4 class="text-lg font-semibold mt-6 mb-2">School Education</h4>
+            <ul class="list-disc list-inside space-y-1 ml-4 text-text-light">
+                <li>City Montessori School, Lucknow (Class XII, 2024) - Score: 91.25%</li>
+                <li>City Montessori School, Lucknow (Class X, 2022) - Score: 94.40%</li>
+            </ul>
+        </section>
+
+        <!-- WORK EXPERIENCE SECTION (using <section> and <article> for semantics) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 section-heading pb-2 text-primary">Internship Experience</h2>
+
+            <!-- Job 1 -->
+            <article class="mb-6 border-l-4 border-secondary pl-4">
+                <h3 class="text-xl font-semibold text-text-dark">Customer Relations Manager</h3>
+                <p class="text-lg font-medium text-text-light">Enjay IT Solutions Ltd. | <span class="text-sm font-normal italic">December 2024 - January 2025</span></p>
+                <ul class="list-disc list-outside space-y-2 mt-2 ml-5 text-text-light">
+                    <li>Executed core Customer Relationship Manager duties, ensuring effective client engagement.</li>
+                    <li>Acquired in-depth knowledge of the product suite, including CRM, Sarathi (field tracking), and Sugam Tally.</li>
+                    <li>Engaged extensively with over 200 customers and partners via calls, new product outreach, and webinars.</li>
+                </ul>
+            </article>
+
+            <!-- Job 2 -->
+            <article class="mb-6 border-l-4 border-secondary pl-4">
+                <h3 class="text-xl font-semibold text-text-dark">Store Manager</h3>
+                <p class="text-lg font-medium text-text-light">Absolute IT Solutions Pvt. Ltd. | <span class="text-sm font-normal italic">June 2025</span></p>
+                <ul class="list-disc list-outside space-y-2 mt-2 ml-5 text-text-light">
+                    <li>Prioritized and enhanced customer experience by actively soliciting feedback in a retail environment.</li>
+                    <li>Developed expertise in pricing strategies, effective sales methodologies, and comprehensive inventory management.</li>
+                    <li>Analyzed and understood internal business structures, including communication channels and administrative processes.</li>
+                </ul>
+            </article>
+
+            <!-- Job 3 -->
+            <article class="mb-6 border-l-4 border-secondary pl-4">
+                <h3 class="text-xl font-semibold text-text-dark">Social Intern</h3>
+                <p class="text-lg font-medium text-text-light">Let's Give Hope Foundation | <span class="text-sm font-normal italic">June 2025 - July 2025</span></p>
+                <ul class="list-disc list-outside space-y-2 mt-2 ml-5 text-text-light">
+                    <li>Authored compelling blog content to communicate the foundation's mission and impact.</li>
+                    <li>Conducted in-depth online research to identify and profile high-potential corporate partners.</li>
+                    <li>Initiated and managed targeted outreach, successfully requesting cash and in-kind contributions.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- SKILLS SECTION (using <table> for semantics) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 section-heading pb-2 text-primary">Core Skills & Tools</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                    <thead class="bg-primary/10">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-primary uppercase tracking-wider">Category</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-primary uppercase tracking-wider">Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-text-dark">Data & Software</td>
+                            <td class="px-6 py-4 text-text-light">Excel, CRM Software, Sarathi (field tracking), Sugam Tally (Tally on Cloud)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-text-dark">Core Management</td>
+                            <td class="px-6 py-4 text-text-light">Customer Relations, Business Operations, Inventory Management, Pricing Strategies</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-text-dark">Soft Skills</td>
+                            <td class="px-6 py-4 text-text-light">Leadership & Communication, Problem-solving, Effective Interpersonal Skills, Meticulously Organized</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PROJECTS / EXTRACURRICULAR SECTION (using <section> and <article> for semantics) -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 section-heading pb-2 text-primary">Achievements & Extracurriculars</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <article class="p-4 bg-background rounded-lg border border-gray-200 hover:border-secondary transition duration-300">
+                    <h3 class="font-semibold text-lg text-text-dark">Radio Program Management</h3>
+                    <p class="text-sm text-text-light mt-1">Managed a program for the City Montessori School Community Radio Channel (90.4 MHz).</p>
+                </article>
+                <article class="p-4 bg-background rounded-lg border border-gray-200 hover:border-secondary transition duration-300">
+                    <h3 class="font-semibold text-lg text-text-dark">Model United Nations (MUN)</h3>
+                    <p class="text-sm text-text-light mt-1">Awarded participant in various Model United Nations conferences.</p>
+                </article>
+                <article class="p-4 bg-background rounded-lg border border-gray-200 hover:border-secondary transition duration-300">
+                    <h3 class="font-semibold text-lg text-text-dark">State-level Athlete</h3>
+                    <p class="text-sm text-text-light mt-1">State-level Basketball player.</p>
+                </article>
+                <article class="p-4 bg-background rounded-lg border border-gray-200 hover:border-secondary transition duration-300">
+                    <h3 class="font-semibold text-lg text-text-dark">Community & Outreach</h3>
+                    <ul class="list-disc list-inside space-y-1 ml-4 text-sm text-text-light">
+                        <li>Member of Women Power Line.</li>
+                        <li>Active participant in the Junior Youth Empowerment Programme.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION (using <footer> for semantics) -->
+        <footer class="pt-6 border-t border-gray-200 mt-8 text-center text-sm text-text-light">
+            <p><strong>Vrinda Singhal</strong> &bull; Resume Last Updated: 29/06/25</p>
+            <address class="mt-1 italic">
+                Flat 102 Tower 1 Parasvnath Planet, Vibhuti Khand, Gomti Nagar, Lucknow, 226010.
+            </address>
+        </footer>
+
+    </div>
+
+</body>
+</html>
